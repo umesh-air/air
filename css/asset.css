@@ -1,0 +1,47 @@
+/* Font 1 */
+@font-face {
+  font-family: 'air';
+  src: url('/assets/air.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Font 2 */
+@font-face {
+  font-family: 'angel';
+  src: url('/assets/angel.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Font 3 */
+@font-face {
+  font-family: 'croner';
+  src: url('/assets/croner.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Font 4 */
+@font-face {
+  font-family: 'nonair';
+  src: url('/assets/nonair.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Font 5 */
+@font-face {
+  font-family: 'perfect';
+  src: url('/assets/perfect.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* Example usage */
+header { font-family : 'perfect';}
+h1 { font-family: 'FontOne', sans-serif; }
+p  { font-family: 'FontTwo', serif; }
+nav { font-family: 'FontThree', sans-serif; }
+footer { font-family: 'FontFour', monospace; }
