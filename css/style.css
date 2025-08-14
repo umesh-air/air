@@ -38,18 +38,19 @@ header {
 }
 
 .manu-primary li {
-    padding: 18px 38px;
+    padding: 18px 44px;
     list-style: none;
-    background-color: aquamarine;
+    background-color: #EDFFF5;
 }
 
 .manu-primary li a {
     text-decoration: none;
-    color: rgb(24, 24, 27);
-    font-size: larger;
-    font-weight: 549;
-    font-family: 'Times New Roman', Times, serif; 
-    transform: skew(20deg);
+    color: #495350;
+    font-size: 18px;
+    font-family: 'bagnard'; 
+      display: inline-block;
+  transform: skewX(20deg);           /* cancel the tilt for text */
+  
 }
 
 .link-secondary {
@@ -72,9 +73,121 @@ header {
 
 .link-secondary li a {
     text-decoration: none;
-    color: rgb(24, 24, 27);
-    font-size: 36px;
+    color:#727573 ;
+    font-size: 33px;
     
 }
 
+#about {
+    height: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
+.about-pages {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    background-color: antiquewhite;
+}
+
+.about-me {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top-about-me {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: end;
+
+}
+
+.dear {
+    font-family: 'nonair';
+    font-size: 34px;
+    color: #495350;
+    padding-left: 18px;
+}
+
+.middle-about-me {
+     height: 500px;
+    width: 100%;
+        display: flex;
+
+
+}
+
+.aboo {
+        font-family: 'perfect';
+    font-size: 18px;
+    color: #272b29;
+    padding: 50px 0px 0px 18px;
+}
+
+.buttom-about-me {
+       height: 100px;
+    width: 100%; 
+    background-color: beige;
+}
+
+
+.avatars{
+    width: 30%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.avatar {
+    background-image: url("../assets/umyes.png");
+    background-size: cover;
+    height: 600px;
+    width: 400px;
+}
+
+
+#resume {
+    height: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.resume {
+    width: 70%;
+    height: 100%;
+
+}
+
+#docs {
+    height: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.docs {
+    width: 70%;
+    height: 100%;
+
+}
+
+#contact {
+    height: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact {
+    width: 70%;
+    height: 100%;
+
+}

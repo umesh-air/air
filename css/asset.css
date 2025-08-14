@@ -38,10 +38,7 @@
   font-style: normal;
 }
 
-
-/* Example usage */
-header { font-family : 'perfect';}
-h1 { font-family: 'FontOne', sans-serif; }
-p  { font-family: 'FontTwo', serif; }
-nav { font-family: 'FontThree', sans-serif; }
-footer { font-family: 'FontFour', monospace; }
+@font-face {
+  font-family: 'bagnard';
+  src: url('/assets/Bagnard.woff') format('woff');
+}
