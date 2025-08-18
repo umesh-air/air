@@ -1,7 +1,7 @@
 /* Font 1 */
 @font-face {
   font-family: 'air';
-  src: url('/assets/air.woff') format('woff');
+  src: url('../fonts/air.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -9,7 +9,7 @@
 /* Font 2 */
 @font-face {
   font-family: 'angel';
-  src: url('/assets/angel.woff') format('woff');
+  src: url('../fonts/angel.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -17,7 +17,7 @@
 /* Font 3 */
 @font-face {
   font-family: 'croner';
-  src: url('/assets/croner.woff') format('woff');
+  src: url('../fonts/croner.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -25,7 +25,7 @@
 /* Font 4 */
 @font-face {
   font-family: 'nonair';
-  src: url('/assets/nonair.woff') format('woff');
+  src: url('../fonts/nonair.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -33,12 +33,12 @@
 /* Font 5 */
 @font-face {
   font-family: 'perfect';
-  src: url('/assets/perfect.woff') format('woff');
+  src: url('../fonts/perfect.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'bagnard';
-  src: url('/assets/Bagnard.woff') format('woff');
+  src: url('../fonts/Bagnard.woff') format('woff');
 }
