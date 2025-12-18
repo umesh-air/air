@@ -162,12 +162,11 @@
           c.fillStyle = '#B6B6B4';
           c.fillRect(random.buckX+2, 452, 46, 10);
 
-          if(localStorage.bucketStatus == "unlocked"){
-            c.fillStyle = '#78866B';
-            c.fillRect(random.bonusBuckX, 450, 50, 40);
-            c.fillStyle = '#B6B6B4';
-            c.fillRect(random.bonusBuckX+2, 452, 46, 10);
-          }
+          // Bonus bucket is always available (no unlock requirement)
+          c.fillStyle = '#78866B';
+          c.fillRect(random.bonusBuckX, 450, 50, 40);
+          c.fillStyle = '#B6B6B4';
+          c.fillRect(random.bonusBuckX+2, 452, 46, 10);
       }
     };
 
@@ -212,9 +211,7 @@
 
         applefallchecker();
         defaultbucketChecker();
-        if(localStorage.bucketStatus == "unlocked"){
-          bonusbucketChecker();
-        }
+        bonusbucketChecker(); // Always active (no unlock requirement)
       }
       else{
         clearInterval(intervalID);
@@ -223,9 +220,6 @@
 
         if(basicValues.miss >= basicValues.missLimit){
             ScoreChecker();
-            if(localStorage.bucketStatus == "unlocked"){
-              localStorage.bucketStatus == "locked";
-            }
             if(localStorage.magnetStatus == "unlocked"){
               localStorage.magnetStatus == "locked";
             }
@@ -428,20 +422,19 @@
       // creates Feedback section.
       var feedBack = "";
       if(basicValues.Score <= 50){
-        feedBack = "Good try.. Play more to unlock Store!";
+        feedBack = "Good try.. Keep playing!";
       }
       else if(basicValues.Score < 50 && basicValues.Score <= 200){
         feedBack = "Almost.. Need a little more!";
       }
       else if(basicValues.Score < 200 && basicValues.Score < 300){
-        feedBack = "99% done.. You can increase 1!";
+        feedBack = "Great score! Keep it up!";
       }
       else if(basicValues.Score <= 300 && basicValues.Score < 400){
-        feedBack = "Conguratulations.. You can unlock Buchet!";
-        localStorage.bucketUnlockingStatus = "canBeUnlocked";
+        feedBack = "Congratulations.. Amazing score!";
       }
       else if(basicValues.Score > 400){
-        feedBack = "Conguratulations.. You can unlock Magnets!";
+        feedBack = "Congratulations.. You can unlock Magnets!";
         localStorage.magnetUnlockingStatus = "canBeUnlocked";
       }
 
@@ -499,12 +492,14 @@
           }
           break;
         case 68:
-          if(localStorage.bucketStatus=="unlocked" && random.bonusBuckX<500-50){
+          // Bonus bucket always available (no unlock requirement)
+          if(random.bonusBuckX<500-50){
             movementHandler.bonusrightHandler();
           }
           break;
         case 65:
-          if(localStorage.bucketStatus=="unlocked" && random.bonusBuckX>0){
+          // Bonus bucket always available (no unlock requirement)
+          if(random.bonusBuckX>0){
             movementHandler.bonusleftHandler();
           }
           break;
@@ -547,29 +542,18 @@
 
     function updateNotifications(){
       document.getElementById("notifications").value="";
-      if(localStorage.bucketUnlockingStatus == "canBeUnlocked"){
-        document.getElementById("notifications").value+= "Your score reached 300. You can unlock bucket in store.."+"\r\n";
-      }
-      else if(localStorage.magnetUnlockingStatus == "canBeUnlocked"){
+      if(localStorage.magnetUnlockingStatus == "canBeUnlocked"){
         document.getElementById("notifications").value+= "Your score reached 400. You can unlock magnet in store.."+"\r\n";
       }
       else{
-        document.getElementById("notifications").value+= "You're welcome to Rabin's Apple game."+"\r\n"+"Hope to see your name as Highest Scorer.."+"\r\n";
+        document.getElementById("notifications").value+= "You're welcome to Rabin's Apple game."+"\r\n"+"Use Arrow keys for main bucket, A/D keys for bonus bucket!"+"\r\n";
       }
     }
 
     function unlckBuckt(){
-      if(localStorage.bucketUnlockingStatus == "canBeUnlocked"){
-        localStorage.bucketStatus = "unlocked";
-        localStorage.bucketUnlockingStatus = "islocked";
-        document.getElementById("notifications").value = "";
-        document.getElementById("notifications").value+= "You have unlocked Bucket."+"\r\n";
-      }
-      else{
-        localStorage.bucketStatus = "locked";
-        document.getElementById("notifications").value = "";
-        document.getElementById("notifications").value+= "You need to score 300 to unlock the Bucket."+"\r\n";
-      }
+      // Bucket is always unlocked - no requirement needed
+      document.getElementById("notifications").value = "";
+      document.getElementById("notifications").value+= "Bucket is already available! Use A/D keys to control it."+"\r\n";
     }
 
     function unlckMgnt(){
@@ -593,10 +577,10 @@
       localStorage.setItem("hstScoreName2","Unknown");
       localStorage.setItem("scoreIdentifier","");
       localStorage.setItem("magnetStatus","locked");
-      localStorage.setItem("bucketStatus","locked");
+      localStorage.setItem("bucketStatus","unlocked"); // Bucket always available
       localStorage.setItem("magnetUnlockingStatus","islocked");
-      localStorage.setItem("bucketUnlockingStatus","islocked");
-      alert("Basic setup is completed.");
+      localStorage.setItem("bucketUnlockingStatus","unlocked"); // Bucket always available
+      alert("Basic setup is completed. Bonus bucket is ready to use!");
     }
 
     function submittName(){
