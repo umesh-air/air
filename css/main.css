@@ -8,6 +8,32 @@
 @font-face { font-family: lig; src: url('fonts/grlight.otf'); font-display: swap; }
 @font-face { font-family: nep; src: url('fonts/nepali.ttf'); font-display: swap; }
 
+/* Screen Reader Only - for SEO H1 */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Skills Title - SEO H2 */
+.skills-title {
+  font-size: 18px;
+  font-family: med;
+  color: #5fcf80;
+  text-align: center;
+  margin: 1.5rem 0 0.5rem 0;
+  padding: 0.5rem;
+  background: linear-gradient(135deg, #f8fdf9 0%, #ebf9ef 100%);
+  border-radius: 10px;
+  border: 1px solid rgba(95, 207, 128, 0.2);
+}
+
 /* Basic Styles */
 html, body {
   padding: 0;
