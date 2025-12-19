@@ -56,23 +56,16 @@ Copyright (c): UMESH AIR-->
 
         <!-- PWA features -->
         <link rel="manifest" href="/manifest.json">
-        <meta name="apple-mobile-web-app-status-bar" content="#e8edfc">
-        <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+        <meta name="apple-mobile-web-app-status-bar-style" content="default">
+        <link rel="apple-touch-icon" href="img/Arith.svg">
         <meta name="msapplication-TileColor" content="#5fcf80">
-        <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
-        <meta name="theme-color" content="#fff">
+        <meta name="theme-color" content="#5fcf80">
+
+        <!-- Preload critical resources for faster loading -->
+        <link rel="preload" href="css/main.css" as="style">
+        <link rel="preload" href="js/jquery-3.1.1.min.js" as="script">
+        <link rel="preconnect" href="https://docs.google.com">
+        <link rel="dns-prefetch" href="https://formspree.io">
 
         <!-- Js Libraries -->
         <script src="js/jquery-3.1.1.min.js"></script>
@@ -147,7 +140,7 @@ Copyright (c): UMESH AIR-->
               <ul class="nav-list wow fadeIn closed">
                 <li class="nav-item nav-item-secondary brand active">
                   <a class="scroll-link nav-link nav-link-brand" href="#home">
-                      <img src="img/lumlion.svg" alt="">
+                      <img src="img/lumlion.png" alt="Umesh Air Logo" width="35" height="35" loading="eager">
                       <span>AIR</span>
                   </a>
                 </li>

@@ -1,0 +1,21 @@
+{
+  "name": "Umesh Air - Drone Engineer Portfolio",
+  "short_name": "Umesh Air",
+  "description": "Portfolio of Umesh Air - Drone Engineer and UAV Developer from Nepal",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#5fcf80",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/img/Arith.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["portfolio", "technology", "engineering"],
+  "lang": "en",
+  "dir": "ltr"
+}
