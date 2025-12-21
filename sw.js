@@ -1,13 +1,16 @@
 // Service Worker for Umesh Air Portfolio
 // Provides offline support and caching for faster loading
 
-const CACHE_NAME = 'umesh-air-v1';
+const CACHE_NAME = 'umesh-air-v2';
 const OFFLINE_URL = '/index.html';
 
 // Assets to cache on install
 const ASSETS_TO_CACHE = [
   '/',
   '/index.html',
+  '/robots.txt',
+  '/sitemap.xml',
+  '/manifest.json',
   '/css/main.css',
   '/css/animate.css',
   '/js/main.js',
@@ -18,6 +21,7 @@ const ASSETS_TO_CACHE = [
   '/library/bootstrap/css/bootstrap.min.css',
   '/library/font-awesome/css/all.min.css',
   '/img/lumlion.svg',
+  '/img/lumlion.png',
   '/img/Arith.svg'
 ];
 
@@ -25,14 +29,9 @@ const ASSETS_TO_CACHE = [
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME)
-      .then((cache) => {
-        console.log('Caching essential assets');
-        return cache.addAll(ASSETS_TO_CACHE);
-      })
+      .then((cache) => cache.addAll(ASSETS_TO_CACHE))
       .then(() => self.skipWaiting())
-      .catch((error) => {
-        console.log('Cache failed:', error);
-      })
+      .catch(() => {})
   );
 });
 

@@ -1,0 +1,21 @@
+# Robots.txt for Umesh Air Portfolio
+# https://umesh-air.com.np
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://umesh-air.com.np/sitemap.xml
+
+# Crawl-delay for politeness (optional)
+Crawl-delay: 1
+
+# Disallow game assets to focus crawlers on main content
+Disallow: /games/apple-fall/img/
+Disallow: /games/face-puzzle.html
+
+# Allow all important pages
+Allow: /index.html
+Allow: /css/
+Allow: /js/
+Allow: /img/
