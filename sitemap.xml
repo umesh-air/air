@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Main Portfolio Page -->
+  <url>
+    <loc>https://umesh-air.com.np/</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://umesh-air.com.np/img/lumlion.png</image:loc>
+      <image:title>Umesh Air - Drone Engineering Student Logo</image:title>
+      <image:caption>Portfolio logo for Umesh Air, UAV Developer from Kathmandu Nepal</image:caption>
+    </image:image>
+  </url>
+
+  <!-- About Section (anchor) -->
+  <url>
+    <loc>https://umesh-air.com.np/#about</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Resume Section (anchor) -->
+  <url>
+    <loc>https://umesh-air.com.np/#resume</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Recommendation Section (anchor) -->
+  <url>
+    <loc>https://umesh-air.com.np/#cover-letter</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Contact Section (anchor) -->
+  <url>
+    <loc>https://umesh-air.com.np/#contact</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Apple Fall Game -->
+  <url>
+    <loc>https://umesh-air.com.np/games/apple-fall/game.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+</urlset>
