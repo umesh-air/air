@@ -1,353 +1,64 @@
-
-<!-- Codes written by UMESH AIR for the Personal Website.
-Copyright (c): UMESH AIR-->
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Title -->
-        <title>Umesh Air — Drone Engineering Student & Full-Stack Developer | Kathmandu, Nepal</title>
-        <link rel="icon" type="image/svg" href="img/Arith.svg">
-
-        <!-- Metas -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!-- SEO Meta Tags -->
-        <meta name="description" content="Umesh Air — UAV & drone engineering student from Kathmandu. Full-stack web developer (HTML, CSS, JS), embedded systems (C, Arduino) and Python data analyst. Portfolio: inbho.com.">
-        <meta name="keywords" content="Umesh Air, drone engineering student, UAV developer, UAS developer, full-stack web developer, Arduino projects, sensor monitoring system, Python data analysis, C programmer, embedded systems, Git developer, Linux developer, HTML, CSS, JavaScript, SQL, GitHub, Figma, circuit design, sensor integration, Kathmandu software developer, Kathmandu drone student, Nepal drone startup, UAV Nepal, medical delivery drone Nepal, Kufstein Tirol applicant, Drone Engineering Austria, medical delivery drones, Arduino sensor project, front-end developer Nepal, GitHub portfolio umesh-air, inbho portfolio project, Integricate UAS software, UAV startup Nepal, data analysis with Python freeCodeCamp">
-        <meta name="author" content="Umesh Air">
-        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-        <link rel="canonical" href="https://umesh-air.com.np/">
-
-        <!-- Open Graph / Facebook -->
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://umesh-air.com.np/">
-        <meta property="og:title" content="Umesh Air — Drone Engineering Student & Full-Stack Developer | Kathmandu, Nepal">
-        <meta property="og:description" content="UAV & drone engineering student from Kathmandu. Full-stack web developer (HTML, CSS, JS), embedded systems (C, Arduino) and Python data analyst. Building medical delivery drones for remote Nepal.">
-        <meta property="og:image" content="https://umesh-air.com.np/img/lumlion.png">
-        <meta property="og:image:width" content="512">
-        <meta property="og:image:height" content="512">
-        <meta property="og:image:alt" content="Umesh Air - Drone Engineering Student from Kathmandu, Nepal">
-        <meta property="og:locale" content="en_US">
-        <meta property="og:site_name" content="Umesh Air Portfolio">
-
-        <!-- Twitter Card -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:url" content="https://umesh-air.com.np/">
-        <meta name="twitter:title" content="Umesh Air — Drone Engineering Student & Full-Stack Developer | Kathmandu, Nepal">
-        <meta name="twitter:description" content="UAV & drone engineering student from Kathmandu. Full-stack web developer, embedded systems (C, Arduino) and Python data analyst. Building medical delivery drones for Nepal.">
-        <meta name="twitter:image" content="https://umesh-air.com.np/img/lumlion.png">
-        <meta name="twitter:image:alt" content="Umesh Air - Drone Engineering Student from Kathmandu, Nepal">
-
-        <!-- Additional SEO for Brave and other browsers -->
-        <meta name="application-name" content="Umesh Air Portfolio">
-        <meta name="mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-title" content="Umesh Air">
-
-        <!-- Geo Tags for Nepal -->
-        <meta name="geo.region" content="NP-3">
-        <meta name="geo.placename" content="Kathmandu, Nepal">
-        <meta name="geo.position" content="27.7172;85.3240">
-        <meta name="ICBM" content="27.7172, 85.3240">
-
-        <!-- Additional Search Engine Meta Tags -->
-        <meta name="google" content="notranslate">
-        <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-        <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-        <meta name="format-detection" content="telephone=no">
-
-        <!-- Css Libraries -->
-        <link rel="stylesheet" href="library/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="library/font-awesome/css/all.min.css">
-        <link rel="stylesheet" href="css/animate.css">
-        <link rel="stylesheet" href="css/main.css">
-
-        <!-- PWA features -->
-        <link rel="manifest" href="/manifest.json">
-        <meta name="apple-mobile-web-app-status-bar-style" content="default">
-        <link rel="apple-touch-icon" href="img/Arith.svg">
-        <meta name="msapplication-TileColor" content="#5fcf80">
-        <meta name="theme-color" content="#5fcf80">
-
-        <!-- Preload critical resources for faster loading -->
-        <link rel="preload" href="css/main.css" as="style">
-        <link rel="preload" href="js/jquery-3.1.1.min.js" as="script">
-        <link rel="preconnect" href="https://docs.google.com">
-        <link rel="dns-prefetch" href="https://formspree.io">
-
-        <!-- Js Libraries -->
-        <script src="js/jquery-3.1.1.min.js"></script>
-        <script src="js/smooth-scroll.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/wow.js"></script>
-
-        <!-- Structured Data for SEO (JSON-LD) -->
-        <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Person",
-            "name": "Umesh Air",
-            "url": "https://umesh-air.com.np",
-            "image": "https://umesh-air.com.np/img/lumlion.png",
-            "jobTitle": "Drone Engineering Student & Full-Stack Developer",
-            "worksFor": {
-                "@type": "Organization",
-                "name": "Integricate"
-            },
-            "description": "Drone Engineering student and full-stack developer from Kathmandu, Nepal. Building UAV software and embedded systems (C, Arduino), developing web applications (HTML, CSS, JavaScript), and creating medical delivery drones for remote Nepali communities.",
-            "email": "mail@umesh-air.com.np",
-            "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Kathmandu",
-                "addressCountry": "Nepal"
-            },
-            "alumniOf": {
-                "@type": "EducationalOrganization",
-                "name": "Kufstein Tirol University of Applied Sciences (Applicant)"
-            },
-            "knowsAbout": [
-                "Drone Engineering",
-                "UAV Development",
-                "UAS Development",
-                "Embedded Systems",
-                "Python Data Analysis",
-                "C Programming",
-                "Linux CLI",
-                "Git",
-                "Arduino Projects",
-                "Sensor Monitoring Systems",
-                "Full-Stack Web Development",
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "SQL",
-                "Medical Drone Delivery",
-                "Circuit Design",
-                "Sensor Integration",
-                "GitHub",
-                "Figma"
-            ],
-            "sameAs": [
-                "https://www.facebook.com/integricate",
-                "https://www.instagram.com/integricate",
-                "https://github.com/umesh-air",
-                "https://www.linkedin.com/in/umesh-air",
-                "https://www.youtube.com/integricate",
-                "https://inbho.com",
-                "https://integricate.com"
-            ]
-        }
-        </script>
-        <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "WebSite",
-            "name": "Umesh Air — Drone Engineering Student & Full-Stack Developer Portfolio",
-            "url": "https://umesh-air.com.np",
-            "description": "Personal portfolio of Umesh Air - Drone Engineering Student, UAV Developer, and Full-Stack Web Developer from Kathmandu, Nepal. Projects: inbho.com, Integricate UAS software, Arduino sensor systems.",
-            "author": {
-                "@type": "Person",
-                "name": "Umesh Air"
-            },
-            "potentialAction": {
-                "@type": "SearchAction",
-                "target": "https://umesh-air.com.np/?q={search_term_string}",
-                "query-input": "required name=search_term_string"
-            }
-        }
-        </script>
-        <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-                {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "name": "Home",
-                    "item": "https://umesh-air.com.np/"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "name": "About",
-                    "item": "https://umesh-air.com.np/#about"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 3,
-                    "name": "Resume",
-                    "item": "https://umesh-air.com.np/#resume"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 4,
-                    "name": "Contact",
-                    "item": "https://umesh-air.com.np/#contact"
-                }
-            ]
-        }
-        </script>
-    </head>
-    <body>
-      <div class="container-fluid global">
-        <div class="row">
-          <div class="col-lg-2 sticky-nav">
-            <nav class="nav wow pulse">
-              <ul class="nav-list wow fadeIn closed">
-                <li class="nav-item nav-item-secondary brand active">
-                  <a class="scroll-link nav-link nav-link-brand" href="#home">
-                      <img src="img/lumlion.png" alt="Umesh Air - Drone Engineering Student from Kathmandu Nepal" width="35" height="35" loading="eager">
-                      <span>AIR</span>
-                  </a>
-                </li>
-                <li class="nav-item nav-item-secondary">
-                    <a class="scroll-link nav-link nav-link-about" href="#about">About</a>
-                </li>
-                <li class="nav-item nav-item-secondary">
-                    <a class="scroll-link nav-link nav-link-resume" href="#resume">Resume</a>
-                </li>
-                <li class="nav-item nav-item-secondary ">
-                    <a class="scroll-link nav-link nav-link-library" href="#cover-letter">Recommendation</a>
-                </li>
-                <li class="nav-item nav-item-secondary ">
-                    <a class="scroll-link nav-link nav-link-contact" href="#contact">Contact</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="col-lg-7 col-lg-offset-1 main">
-            <section class="about" id="about">
-              <div class="about-container wow fadeInUp" data-wow-duration="1s">
-                <h1 class="sr-only">Drone Engineering Student & Full-Stack Developer — Umesh Air</h1>
-                <h2 class="about-title">About Me</h2>
-                <div class="about-content">
-                  <div class="about-intro wow fadeInLeft" data-wow-delay="0.2s">
-                    <span class="greeting">Hello, I'm</span>
-                    <h3 class="name-highlight">Umesh Air</h3>
-                  </div>
-                  <p class="about-text wow fadeInUp" data-wow-delay="0.4s">
-                    I'm a <span class="highlight">Drone Engineering student</span> and <span class="highlight">full-stack developer</span> from <span class="highlight">Kathmandu, Nepal</span>. I build <span class="highlight">UAV software</span> and <span class="highlight">embedded systems</span> (<span class="tech-tag">C</span>, <span class="tech-tag">Arduino</span>) and develop web applications (<span class="tech-tag">HTML</span>, <span class="tech-tag">CSS</span>, <span class="tech-tag">JavaScript</span>).
-                  </p>
-                  <p class="about-text wow fadeInUp" data-wow-delay="0.6s">
-                    My work focuses on <span class="highlight">medical delivery drones</span> and <span class="highlight">sensor-based monitoring systems</span> for remote Nepali communities. With expertise in <span class="tech-tag">Python data analysis</span>, <span class="tech-tag">Git</span>, and <span class="tech-tag">Linux</span>, I've built projects including <a href="https://inbho.com" target="_blank" rel="noopener noreferrer" class="inline-link-green">inbho.com</a> and <a href="https://integricate.com" target="_blank" rel="noopener noreferrer" class="inline-link-green">Integricate UAS software</a>.
-                  </p>
-                  <div class="mission-box wow pulse" data-wow-delay="0.8s" data-wow-iteration="infinite">
-                    <i class="fas fa-rocket mission-icon"></i>
-                    <div class="mission-content">
-                      <h4>Medical Delivery Drone Projects for Remote Nepal</h4>
-                      <p>To develop <strong>UAV-based solutions</strong> that deliver medical supplies to Nepal's most remote mountain communities—places where roads don't reach but <strong>drones can</strong>. Applying for <strong>Drone Engineering Austria</strong> at <strong>Kufstein Tirol</strong>.</p>
-                    </div>
-                  </div>
-                  <h2 class="skills-title wow fadeInUp" data-wow-delay="0.9s">Skills: HTML • CSS • JavaScript • C • Python • SQL • Git • Linux</h2>
-                  <div class="skills-showcase wow fadeInUp" data-wow-delay="1s">
-                    <div class="skill-item" title="UAV Developer & Drone Engineering Student">
-                      <i class="fas fa-drone-alt"></i>
-                      <span>UAV/UAS Developer</span>
-                    </div>
-                    <div class="skill-item" title="Arduino projects & sensor monitoring system">
-                      <i class="fas fa-microchip"></i>
-                      <span>Arduino & Embedded</span>
-                    </div>
-                    <div class="skill-item" title="Full-stack web developer - HTML, CSS, JavaScript">
-                      <i class="fas fa-code"></i>
-                      <span>Full-Stack Dev</span>
-                    </div>
-                    <div class="skill-item" title="Python data analysis & C programmer">
-                      <i class="fas fa-chart-line"></i>
-                      <span>Python & Data</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <p class="about-text resume-link wow fadeIn" data-wow-delay="1.2s">
-                <i class="fas fa-file-alt"></i> Check out my resume below:
-              </p>
-            </section>
-            <section class="resume" id="resume">
-              <div class="resume-doc">
-                <a href="https://docs.google.com/document/d/11OTmodnhERGhxOK_9DyxdA5aUBGN0XJkKuCrSQdkNo8/edit?usp=sharing" target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-default btn-sm"><i class="fas fa-up-right-from-square ml-2"></i> Download Resume</button></a>
-                <iframe src="https://docs.google.com/document/d/e/2PACX-1vRlzThBkHpUoCp-xbYXs2NzybDp0g4VQLA9hm4j0ZUe9getMPQQLfwMK7m2VgiCPcbmwF_avYxTH8QQ/pub?embedded=true" loading="lazy" title="Umesh Air Resume - Drone Engineering Student"></iframe>
-              </div>
-            </section>
-
-            <section class="resume about" id="cover-letter">
-              <p class="about-text">
-                Following is my Recommendation Letter:
-              </p>
-              <div class="resume-doc">
-                <a href="https://drive.google.com/file/d/1GlhlIC5UjnF3812UsGaptbFoV1NVPWl_/view?usp=sharing" target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-default btn-sm"><i class="fas fa-up-right-from-square ml-2"></i> Download Recommendation Letter</button></a>
-                <iframe src="https://docs.google.com/document/d/e/2PACX-1vT96D69BzZZSmDDxFnfXJT5G6H19SbiqVN63L2HUppUPVd9pa_uL6rERNF0V5Ca5MbUy0BB4XD9u91l/pub?embedded=true" loading="lazy" title="Recommendation Letter for Umesh Air"></iframe>
-              </div>
-            </section>
-            <section class="contact" id="contact">
-              <div class="contact-header wow fadeInUp">
-                <h2 class="contact-title">Contact Kathmandu Software Developer</h2>
-                <p class="contact-subtitle">Interested in Drone Engineering, UAV Development, or Full-Stack Projects? Let's connect!</p>
-              </div>
-
-              <div class="contact-topics wow fadeInUp" data-wow-delay="0.2s">
-                <h4 class="topics-title"><i class="fas fa-comments"></i> Projects: Arduino Sensor System • inbho.com • Integricate (UAS software)</h4>
-                <div class="topic-tags">
-                  <span class="topic-tag wow bounceIn" data-wow-delay="0.3s"><i class="fas fa-helicopter"></i> UAV Nepal</span>
-                  <span class="topic-tag wow bounceIn" data-wow-delay="0.4s"><i class="fas fa-microchip"></i> Arduino Projects</span>
-                  <span class="topic-tag wow bounceIn" data-wow-delay="0.5s"><i class="fas fa-satellite"></i> Sensor Integration</span>
-                  <span class="topic-tag wow bounceIn" data-wow-delay="0.6s"><i class="fas fa-hospital"></i> Medical Drones Nepal</span>
-                  <span class="topic-tag wow bounceIn" data-wow-delay="0.7s"><i class="fas fa-mountain"></i> UAV Startup Nepal</span>
-                  <span class="topic-tag wow bounceIn" data-wow-delay="0.8s"><i class="fas fa-cogs"></i> Embedded Systems</span>
-                </div>
-              </div>
-
-              <div class="contact-info-box wow fadeInUp" data-wow-delay="0.4s">
-                <a href="mailto:mail@umesh-air.com.np" class="email-link">
-                  <i class="fas fa-envelope"></i>
-                  <span>mail@umesh-air.com.np</span>
-                </a>
-              </div>
-
-              <form method="POST" action="https://formspree.io/mail@umesh-air.com.np" class="contact-form wow fadeInUp" data-wow-delay="0.6s">
-                <div class="form-row">
-                  <div class="form-group wow fadeIn" data-wow-delay="0.7s">
-                    <input type="text" required id="name" name="name" placeholder="Your name..">
-                  </div>
-                  <div class="form-group wow fadeIn" data-wow-delay="0.8s">
-                    <input type="email" required id="email" name="email" placeholder="Your email..">
-                  </div>
-                </div>
-                <div class="form-group wow fadeIn" data-wow-delay="0.9s">
-                  <input type="text" required id="subject" name="subject" placeholder="Subject (e.g., Drone Engineering Collaboration)..">
-                </div>
-                <div class="form-group wow fadeIn" data-wow-delay="1s">
-                  <textarea id="message" required name="message" placeholder="Your message..." rows="4"></textarea>
-                </div>
-                <button type="submit" class="submit-btn wow pulse" data-wow-delay="1.1s">
-                  <i class="fas fa-paper-plane"></i> Send Message
-                </button>
-              </form>
-            </section>
-
-            <footer id="footer">
-                <div class="row">
-                  <div class="col-md-12">
-                    <ul class="footer-icons">
-                      <li><a href="https://www.facebook.com/integricate" target="_blank" rel="noopener noreferrer" aria-label="Follow Umesh Air on Facebook"><i class="fab fa-2x fa-facebook-square"></i></a></li>
-                      <li><a href="https://www.instagram.com/integricate" target="_blank" rel="noopener noreferrer" aria-label="Follow Umesh Air on Instagram"><i class="fab fa-2x fa-instagram"></i></a></li>
-                      <li><a href="https://github.com/umesh-air" target="_blank" rel="noopener noreferrer" aria-label="View Umesh Air GitHub profile"><i class="fab fa-2x fa-github-square"></i></a></li>
-                      <li><a href="https://www.linkedin.com/in/umesh-air" target="_blank" rel="noopener noreferrer" aria-label="Connect with Umesh Air on LinkedIn"><i class="fab fa-2x fa-linkedin"></i></a></li>
-                      <li><a href="mailto:mail@umesh-air.com.np" aria-label="Email Umesh Air"><i class="fas fa-2x fa-envelope-square"></i></a></li>
-                      <li><a href="https://www.youtube.com/@integricate" target="_blank" rel="noopener noreferrer" aria-label="Subscribe to Umesh Air YouTube channel"><i class="fab fa-2x fa-youtube-square"></i></a></li>
-                    </ul>
-                    <p class="at-text">@ UmeshAir</p>
-                    <p class="at-text">© 2025 UMESH AIR</p>
-                    <p class="at-text">One more thing: <a class="inline-link" href="https://integricate.com/" target="_blank" rel="noopener noreferrer">Integricate!</a></p>
-                  </div>
-                </div>
-            </footer>
-          </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umesh Air || Integricate</title>
+    <!-- Font Awesome CDN -->
+     <link rel="icon" href="assets/images/logo.svg">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fontsource for Inter font -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+    <!-- Vertical Navigation Bar -->
+    <nav class="vertical-nav">
+        <!-- Top: Logo -->
+        <div class="nav-logo">
+            <img src="assets/images/integricate.svg">
         </div>
-      </div>
-    </body>
-    <script src="js/main.js"></script>
+
+        <!-- Middle: Social Media Icons -->
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/umesh-air/" class="social-icon" data-tooltip="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/umesh-air" class="social-icon" data-tooltip="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/umesair/" class="social-icon" data-tooltip="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://x.com/umesair" class="social-icon" data-tooltip="X (Twitter)">
+                <i class="fab fa-x-twitter"></i>
+            </a>
+        </div>
+
+        <!-- Bottom: Scroll Down Animation -->
+        <div class="scroll-down" onclick="window.scrollTo({top: window.innerHeight, behavior: 'smooth'})">
+            <div class="mouse-icon">
+                <div class="wheel"></div>
+            </div>
+            <span class="scroll-text">Scroll</span>
+        </div>
+    </nav>
+
+    <!-- Dummy Content for Demonstration -->
+    <main class="main-content">
+        <h1>Intro.</h1>
+        <p>
+            I'm Umesh Air from Nepal.
+        </p>
+        <br>
+        <p>
+            Scroll down to see the content extend, or click the mouse icon 
+            in the sidebar to jump to the next section. The color theme 
+            utilizes White, Black, and a Green accent.
+        </p>
+        <div style="margin-top: 50px; height: 500px; background: #f5f5f5; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+            <p style="color: #999;">More Content Here...</p>
+        </div>
+    </main>
+    <script src="assets/js/script.js"></script>
+</body>
 </html>
